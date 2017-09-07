@@ -9,7 +9,77 @@
 
 <div class="container">
     
-    <h1> Front End Starter.</h1>
+    {% include "macros/breadcrumb.html" %}
+
+    <div class="body-row row">
+
+        {% include "shared/left-sidebar.html" %}
+
+        <div id="content-wrapper" class="col-sm-12 col-md-9">
+            
+            <div class="row">
+                {% include "shared/content-top.html" %}
+                <main id="main-content" tabindex="-1" class="main-three-column col-sm-12 col-md-12 col-lg-8">
+                    {% include "macros/grid-system.html" %}
+
+                    {% include "macros/text-options.html" %}
+
+                    {% include "macros/aria-tabs.html" %}
+
+                    {% include "macros/jq-ui-tabs.html" %}            
+
+                    {% include "macros/accordion.html" %}
+
+                    {% include "macros/data-table.html" %}
+
+                    {% include "macros/alerts.html" %}
+
+                    {% include "macros/fieldset.html" %}
+
+                    {% include "macros/buttons.html" %}
+
+                    {% include "macros/cards.html" %}
+
+                    {% include "macros/slick-slider.html" %}
+
+                    {% include "macros/dropdowns.html" %}
+
+                    {% include "macros/forms.html" %}
+
+                    {% include "macros/input-group.html" %}
+
+                    {% include "macros/list-group.html" %}
+
+                    {% include "macros/modal.html" %}
+
+                    {% include "macros/pagination.html" %}
+
+                    {% include "macros/scrollspy.html" %}
+
+                    {% include "macros/tooltips.html" %}
+
+                    {% include "macros/img-overlay.html" %}
+
+                    {% include "macros/text-section.html" %}
+
+                    {% include "macros/factoid.html" %}
+
+                    {% include "macros/media.html" %}
+
+                    {% include "macros/media-img-right.html" %}
+
+                    {% include "macros/pull-quote.html" %}
+
+                    {% include "macros/video.html" %}
+                </main>
+
+                {% include "shared/right-sidebar.html" %}
+
+            </div>
+
+        </div>
+        
+    </div>
 
 </div>
 

@@ -31,24 +31,26 @@
   <meta property="og:locale" content="en_US">
 
   <!-- Favicons (created with http://realfavicongenerator.net/)-->
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/img/favicons/manifest.json">
-	<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/src/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/src/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/src/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/src/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/src/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/src/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/src/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/src/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicons/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" href="/src/img/favicons/ndroid-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/src/img/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/src/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/src/img/favicons/safari-pinned-tab.svg" color="#000000">
   <meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/src/img/favicons/mstile-144x144.png">
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
@@ -65,123 +67,1466 @@
     
      <a aria-label="Skip to Main Content" tabindex="0" class="skip sr-only sr-only-focusable" href="#main-content">Skip to Main Content</a> 
 
-    <header class="l-header">
-    <div class="headerRow" id="headerRow">
-        <div class="logoImage">
-            <!-- com.omniupdate.div label="logo" path="/_resources/includes/logo.php" -->
-            <a href="/"><img src="http://www.westvalley.edu/_resources/images/logos/wvc-logo-horz-blue.png" alt="West Valley College" width="419" height="75">
-            </a>
-            <!-- /com.omniupdate.div -->
+    <header class="header">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Bootstrap</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
         </div>
-        <div id="main-toggle-container" class="main-toggle-container">
-            <div class="toggle">
-                <button class="toggle-element" aria-controls="main-nav" aria-expanded="false">
-                </button>
-            </div>
-            <span class="menu-text">Menu</span>
-        </div>
-        <!-- com.omniupdate.div label="common-header" path="/_resources/includes/ou-common-header-content-new.php" -->
-        <div class="actionNavBar">
-            <div class="actionNavBox"><a title="Canvas Learning Management" href="https://wvm.instructure.com/login/canvas" target="_blank">Canvas</a> <a title="WVCPortal" href="/wvcportal/" target="_blank">WVCPortal</a> <a title="Campus Directory" href="/directories.html">Directory</a> <a title="Library" href="/library/">Library</a> <a title="Online Classes" href="/elearning/index.html">Online Classes</a>
-                <ul id="quicklinkmenu">
-                    <li class="menu_head">Quick Links
-                        <ul class="menu_body">
-                            <li><a title="Academic &amp; Career Programs" href="/academic/">Academic &amp; Career Programs</a>
-                            </li>
-                            <li><a title="Academic Calendar" href="/calendar/">Academic Calendar</a>
-                            </li>
-                            <li><a title="Bookstore" href="/bookstore/index.html" target="_blank">Bookstore</a>
-                            </li>
-                            <li><a title="College Catalog" href="/catalog/index.html">Catalog</a>
-                            </li>
-                            <li><a title="Class Schedule" href="/classes/schedule/index.html">Class Schedule</a>
-                            </li>
-                            <li><a title="Degree, Certificate, and Transfer Program" href="/classes/programs/">Degree, Certificate, and Transfer Programs</a>
-                            </li>
-                            <li><a title="eLearning" href="/elearning/">eLearning</a>
-                            </li>
-                            <li><a title="Facility Rentals" href="/calendar/facilities/">Facility Rentals</a>
-                            </li>
-                            <li><a title="Faculty &amp; Staff Resources" href="/faculty/">Faculty &amp; Staff Directory</a>
-                            </li>
-                            <li><a title="Faculty &amp; Staff Resources" href="/faculty/_faculty-resources.html">Faculty &amp; Staff Resources</a>
-                            </li>
-                            <li><a title="Financial Aid" href="/services/financialaid/">Financial Aid</a>
-                            </li>
-                            <li><a title="How to Apply" href="/admissions/apply.html">How to Apply</a>
-                            </li>
-                            <li><a title="Important Dates" href="/calendar/dates_deadlines/">Important Dates</a>
-                            </li>
-                            <li><a title="Library" href="/library/">Library</a>
-                            </li>
-                            <li><a title="Maps" href="/maps/">Maps</a>
-                            </li>
-                            <li><a title="Parking" href="/maps/parkinginfo/">Parking</a>
-                            </li>
-                            <li><a title="Student Services" href="/services/">Student Services</a>
-                            </li>
-                            <li><a title="Transcripts" href="/admissions/records.html">Transcripts</a>
-                            </li>
-                            <li><a title="Veterans Support Services" href="/veterans/index.html">Veterans Support Services</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="headersearch">
-                <form id="searchbox_012142509619560477237:cls2xeejzj8" action="/search/results.html">
-                    <input type="hidden" name="cof" value="FORID:9">
-                    <input type="hidden" name="cx" value="012142509619560477237:cls2xeejzj8">
-                    <label title="Input for Site Search" for="q">
-                        <input id="q" title="Input for Site Search" onfocus="this.value='';" type="text" name="q" value="" maxlength="255">
-                    </label>
-                    <label title="Click to Search" for="sa">
-                        <input id="sa" title="Click to Search" onclick="javascript: document.getElementById('searchbox_012142509619560477237:cls2xeejzj8').submit();" type="button" name="sa" value="Search">
-                    </label>
-                    <noscript>&lt;a href="&lt;span id="oudependency_d7114300_1" class="ouDependencyOff"&gt;/search&lt;/span&gt;"&gt;SEARCH&lt;/a&gt;</noscript>
-                </form>
-                <script type="text/javascript">
-                    // <![CDATA[
-                    <!--
-                    function loadText() {
-                        var formobj = document.getElementById('searchbox_012142509619560477237:cls2xeejzj8').q;
-                        formobj.value = "search westvalley.edu";
-                    }
-                    loadText();
-                    // -->
-                    // ]]>
-                </script>
-                <div class="azIndex"><a title="" href="/sitemap.html">A-Z Index</a>
-                </div>
-            </div>
-        </div>
-        <!-- /com.omniupdate.div -->
-    </div>
-    <div class="dropLayer">
-        <!-- com.omniupdate.div label="drop-menu" path="/resources/include/new/ou-header-drop-menu-new.php" -->
-        <div class="dropmenu">
-            <ul id="menu">
-                <li class="mega first"><span class="nav"><a href="/about/index.html">&nbsp;About Us&nbsp;</a></span>
-                </li>
-                <li class="mega"><span class="nav droplink"><a href="/admissions/">&nbsp;Admissions&nbsp;</a></span>
-                </li>
-                <li class="mega wide twoline"><span class="nav droplink"><a class="droplinkCareer" href="/academics/">Academic &amp; Career Programs</a></span>
-                </li>
-                <li class="mega wide"><span class="nav droplink"><a href="/services/index.html">&nbsp;Student Services&nbsp;</a></span>
-                </li>
-                <li class="mega last"><span class="nav droplink"><a href="/wvcsports/index.html">&nbsp;Athletics&nbsp;</a></span>
-                </li>
-            </ul>
-        </div>
-        <!-- /com.omniupdate.div -->
-    </div>
+      </nav>
 </header>
 
     
 
 <div class="container">
     
-    <h1> Front End Starter.</h1>
+    <div class="row">
+	<div class="content-header col-sm-12">
+	    <nav class="breadcrumb">
+	        <a aria-label="Home" class="breadcrumb-item" href="#">Home</a>
+	        <span class="breadcrumb-item active">Kitchen Sink Page</span>
+	    </nav>
+	    <h1>Standard Sub Page (H1)</h1>
+	</div>
+</div>
+
+    <div class="body-row row">
+
+        <aside role="complementary" class="subnav-container left-subnav col-sm-12 col-md-3 col-lg-3">
+        <h2 id="subnav-toggle" class="section-title" tabindex="0">Section Title</h2>
+        <div class="subnav-content">
+          <ul class="subnav menu level-1">
+            <li class="menu-item">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#">Mission, Vision & Information</a>
+                              <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+              </li>
+            <li class="menu-item">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#">Leadership</a>
+                <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+              </li>
+            <li class="menu-item">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#">Administrative Offices</a>
+                <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+              </li>
+            <li class="menu-item">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#">Accreditation</a>
+                <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+              </li>
+            <li class="menu-item current-menu-item menu-item-has-children list-item-open">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#" class="menu-description">Current Page Title</a>
+                <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="list-toggle" aria-label="togglebutton"><span class="fa fa-angle-right"></span></button>
+                <a href="#">Second Level Page Example</a>
+                <ul class="sub-menu level-2">
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    </li>
+                    <li class="menu-item current-page-item"><a href="#">Dallas</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Third Level Page Example</a>
+                    <li class="menu-item"><a href="#">Third Level Page Example Longer Title</a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+
+    <div class="extra-info card cta-card">
+        <div class="card-block">
+            <h4 class="card-title">Important & Extra Info</h4>
+            <h5 class="card-subheading">Extra info subheading</h5>
+            <p class="card-text">Extra info paragraph text description.</p>
+            <a href="#" class="promo-link">Important Info Link</a>
+        </div>
+    </div>
+</aside>
+
+        <div id="content-wrapper" class="col-sm-12 col-md-9">
+            
+            <div class="row">
+                <div id="content-top" class="col-sm-12">
+    <img src="/img/murray900x400.jpg" alt="content header image">
+</div>
+                <main id="main-content" tabindex="-1" class="main-three-column col-sm-12 col-md-12 col-lg-8">
+                    <div class="grid-system-examples">
+
+  <div class="row">
+    <div class="column col-sm-12">
+       <div class="image-slider">
+    <div class="slick-slider">
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/g/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="http://www.placecage.com/c/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="http://www.placecage.com/600/300" alt="Image description">
+
+            <div class="slider-caption">
+               <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/g/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="slider-buttons-wrap">
+      <div class="slider-buttons">
+        <span class="fa fa-play play" aria-hidden="true"></span>
+        <span class="fa fa-pause pause" aria-hidden="true"></span>
+      </div>
+    </div>
+
+</div>
+    </div>
+ 
+  </div>
+
+  <div class="row media-text-section">
+    <div class="column col-md-4">
+      <figure>
+
+        <img class="media media-object img-fluid d-flex align-self-center mr-3" src="https://www.fillmurray.com/600/600" alt="example image">
+        <figcaption>This is the caption of the above image.</figcaption>
+        
+      </figure>
+    </div>
+    <div class="column col-md-8">
+      <div class="text-input-section">
+    <p>
+        Long paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim mi. Suspendisse semper arcu vel hendrerit placerat. Nullam purus enim, posuere et ante eu, faucibus dictum dui. Morbi efficitur urna turpis, id tempus augue finibus eget. Phasellus id ultricies nisl. Nam viverra risus nec odio cursus facilisis pellentesque eu nisi. Donec eu risus nunc. Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis. Suspendisse potenti. Aliquam facilisis tristique volutpat. Ut ut rhoncus mauris. Cras vitae elit posuere, ultricies dolor eu, dignissim nisl. Proin vitae congue augue. Maecenas sapien eros, finibus et rhoncus nec, porttitor sed lorem. Nunc at rhoncus turpis.
+    </p>
+</div>
+    </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="column col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://fillmurray.com/400/300" alt="Card image cap">
+          <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+    <div class="column col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://fillmurray.com/400/300" alt="Card image cap">
+          <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+    <div class="column col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top float-left img-fluid" src="https://fillmurray.com/400/300" alt="Card image cap">
+          <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="pull-right card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<div class="row">
+     <div class="column col-sm-12 col-md-7 col-lg-7">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://fillmurray.com/400/300" alt="Card image cap">
+          <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a card inside a col-sm-7 col-lg-9</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+    <div class="column col-sm-12 col-md-5 col-lg-5">
+        <div class="card cta-card">
+          <div class="card-block">
+              <h4 class="card-title">Important Stuff & Things</h4>
+              <p class="card-text">This is a card inside a col-sm-5 col-lg-3</p>
+              <ul>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="column col-sm-12 col-md-5 col-lg-5">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="https://fillmurray.com/400/300" alt="Card image cap">
+          <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a card inside a col-sm-5 col-lg-3</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+    </div>
+    <div class="column col-sm-12 col-md-7 col-lg-7">
+        <div class="card cta-card">
+          <div class="card-block">
+              <h4 class="card-title">Important Stuff & Things</h4>
+              <p class="card-text">This is a card inside a col-sm-7 col-lg-9</p>
+              <ul>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+                  <li><a href="#" class="promo-link">Important List Link</a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column col-sm-12">
+       <div class="text-input-section">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim mi. Suspendisse semper arcu vel hendrerit placerat. Nullam purus enim, posuere et ante eu, faucibus dictum dui. Morbi efficitur urna turpis, id tempus augue finibus eget. Phasellus id ultricies nisl. Nam viverra risus nec odio cursus facilisis pellentesque eu nisi. Donec eu risus nunc. 
+    </p>
+
+    <p>
+        Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis.
+    </p>
+
+</div>
+    </div>
+ 
+  </div>
+
+  <div class="row">
+    <div class="column col-md-6">
+       <div class="text-input-section">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim mi. Suspendisse semper arcu vel hendrerit placerat. Nullam purus enim, posuere et ante eu, faucibus dictum dui. Morbi efficitur urna turpis, id tempus augue finibus eget. Phasellus id ultricies nisl. Nam viverra risus nec odio cursus facilisis pellentesque eu nisi. Donec eu risus nunc. 
+    </p>
+
+    <p>
+        Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis.
+    </p>
+
+    <p>
+        Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis. 
+    </p>
+</div>
+       <div class="row">
+          <div class="col-md-6">
+            <p>
+              Nested equal width column. Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Nested equal width column. Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis.
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="column col-md-6">
+      <div class="image-figure">
+    <figure>
+        <img class="media media-object img-fluid d-flex align-self-center mr-3" src="https://www.fillmurray.com/600/600" alt="example image">
+        <figcaption>This is the caption of the above image.</figcaption>
+    </figure>
+
+    <p>
+        Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis.
+    </p>
+</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+                    <!-- headers -->
+<div class="example-headers">
+    <h1>Test header 1 (h1)</h1>
+    <h2>Test header 2 (h2)</h2>
+    <h3>Test header 3 (h3)</h3>
+    <h4>Test header 4 (h4)</h4>
+    <h5>Test header 5 (h5)</h5>
+    <h6>Test header 6 (h6)</h6>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#">laboris nisi ut aliquip ex ea commodo</a> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <del>This text is meant to be treated as deleted</del> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum <mark>highlighted text</mark> amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <s>line of text treated as no longer accurate</s> <ins>this text is treated as an addition to the document</ins></p> 
+
+<ul>
+    <li>Theophrasti igitur, inquit, <u>this is underlined text</u> de beata vita?</li>
+    <li><a href="#">Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim.</a></li>
+    <li>Qui si omnes veri erunt, <small>this is fine print text</small> aliquid cognosci et percipi.</li>
+    <li>Superiores <strong>this is bold text</strong>, quae esse possent, quarum est una sola defensa, eaque vehementer.</li>
+</ul>
+<ol>
+    <li>Quis <a href="#">Aristidem non mortuum</a> diligit?</li>
+    <li>Hoc est dicere: Non reprehenderem asotos, si non essent asoti.</li>
+    <li>Indicant pueri, in quibus <em>this is italicized text</em> natura cernitur.</li>
+    <li>Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?</li>
+    <li>Aliter enim explicari, quod quaeritur, non potest.</li>
+</ol>
+
+<dl class="row nested-text">
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="col-sm-3">Euismod</dt>
+  <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+  <dt class="col-sm-3">Malesuada porta</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+  <dt class="col-sm-3">Nesting</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">Nested definition list</dt>
+      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+    </dl>
+  </dd>
+</dl>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+
+<blockquote class="pull-quote">Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall; All the king's horses and all the king's men, Couldn't put Humpty together again.</blockquote>
+
+<p>Sed <abbr title="lorem ipsum example">ut perspiciatis unde</abbr> omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed <abbr title="lorem ipsum example" class="initialism">quia consequuntur</abbr> magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+<blockquote>Hickory Dickory dock, The mouse ran up the clock, The clock struck one, The mouse ran down, Hickory Dickory dock.</blockquote>
+
+<blockquote class="blockquote">
+    <p class="mb-0"> Dickory dock, The mouse ran up the clock, The clock struck one, The mouse ran down, Hickory Dickory dock.</p>
+    <footer class="blockquote-footer">Quote source in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="row tabWidgetContainer">
+    <ul class="col-md-12 tablist" role="tablist">
+        <li class="active" role="tab" aria-selected="true" 
+            aria-controls="first-tab" tabindex="0">Tab One</li>
+        <li class="inactive" role="tab" aria-selected="false" 
+            aria-controls="second-tab" tabindex="-1">Tab Two</li>
+        <li class="inactive" role="tab" aria-selected="false" 
+            aria-controls="third-tab" tabindex="-1">Tab Three</li>
+        <li class="inactive" role="tab" aria-selected="false" 
+            aria-controls="fourth-tab" tabindex="-1">Tab Four</li>
+    </ul>
+    <div class="tabgrouping">
+        <div id="first-tab" class="tabpanel active" role="tabpanel" aria-hidden="false">
+          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        </div>
+        <div id="second-tab" class="tabpanel inactive" role="tabpanel" aria-hidden="true">
+           <p>Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p> 
+        </div>
+        <div id="third-tab" class="tabpanel inactive" role="tabpanel" aria-hidden="true">
+          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+        </div>
+        <div id="fourth-tab" class="tabpanel inactive" role="tabpanel" aria-hidden="true">
+          <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        </div>
+    </div>
+</div>
+
+                    <div id="tabs" class="row ui-tabs">
+  <ul class="col-md-12">
+    <li><a href="#tabs-1">jQuery UI Tabs</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>            
+
+                    <div id="accordion" class="accordion-section" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h3 class="mb-0">
+              <a  class="accordion-link card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"aria-controls="collapseOne">
+                 <span class="accordion-icon" aria-hidden="true"></span>
+               Accordion Group Item #1
+              </a>
+            </h3>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h3 class="mb-0">
+              <a class="accordion-link card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Group Item #2
+              </a>
+            </h3>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h3 class="mb-0">
+              <a class="accordion-link card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Group Item #3
+              </a>
+            </h3>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-block">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+          </div>
+        </div>
+ </div>
+
+<h2>jQuery UI Accordion</h2>
+
+ <div id="jq-accordion" class="jq-accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+
+                    <div class="data-table-wrap card table-responsive table-section">
+    <div class="table-header card-header">
+        <h3>Featured Static Table</h3>
+    </div>
+    <div class="card-block">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Test Row</td>
+                <td>The test</td>
+                <td>Third test</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="data-table-wrap card table-section">
+    <div class="table-header card-header">
+        <h3>Responsive Table With Scrollbar</h3>
+    </div>
+    <div class="card-block">
+        <table class="table table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Fourth Column</th>
+                    <th>Fifth Column</th>
+                    <th>Sixth Column</th>
+                    <th>Seventh Column</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@thornton</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="data-table-wrap card table-section">
+    <div class="table-header card-header">
+        <h3>Responsive Table Hide Columns</h3>
+    </div>
+    <div class="card-block">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th class="hide-tablet">Fourth Column</th>
+                    <th class="hide-phone">Fifth Column</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td class="hide-tablet">Example text</td>
+                    <td class="hide-phone">Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@thornton</td>
+                    <td class="hide-tablet">Example text</td>
+                    <td class="hide-phone">Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td class="hide-tablet">Example text</td>
+                    <td class="hide-phone">Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td class="hide-tablet">Example text</td>
+                    <td class="hide-phone">Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td class="hide-tablet">Example text</td>
+                    <td class="hide-phone">Example text</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+ <div class="data-table-wrap card table-section">
+    <div class="table-header card-header">
+        <h3>Responsive Table With Scrollbar</h3>
+    </div>
+    <div class="card-block">
+        <table id="search-table" class="display table table-responsive table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Fourth Column</th>
+                    <th>Fifth Column</th>
+                    <th>Sixth Column</th>
+                    <th>Seventh Column</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@thornton</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Test Row</td>
+                    <td>The test</td>
+                    <td>Third test</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                    <td>Example text</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+                    <div class="alert alert-success" role="alert">
+    <strong>Alert!</strong> You successfully read this important alert message.
+    <p class="sr-only">This is a success alert message</p>
+    <!-- sr-only text not needed if regular alert text conveys full meaning -->
+</div>
+
+                    <div class="fieldset-wrap">
+  <form class="fieldset-form">
+    <fieldset>
+        <legend>
+          <h3 class="fieldset-header">Fieldset Example:</h3>
+        </legend>
+      <div class="fieldset-content">
+        <h4>Name:</h4> 
+        <input aria-label="Name" type="text">
+
+        <h4>Email:</h4> 
+        <input aria-label="Email" type="text">
+
+        <h4>Date of birth:</h4> 
+        <input aria-label="Date of birth" type="text">
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+                    <div class="buttons-section">
+    <button type="button" class="btn btn-primary btn-lg">Large primary button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small primary button</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level primary button</button>
+</div>
+
+                    <div class="row cards-section">
+        <div class="col-sm-6">
+            <!-- Card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="http://fillmurray.com/400/300" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Program Card Title</h4>
+                    <p class="card-text">Program card paragraph text description.</p>
+                    <ul>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <!-- Card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="http://fillmurray.com/400/300" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Program Card Title</h4>
+                    <p class="card-text">Program card paragraph text description.</p>
+                    <ul>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                        <li><a href="#" class="promo-link">Program Card Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+                    <div class="image-slider">
+    <div class="slick-slider">
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/g/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="http://www.placecage.com/c/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="http://www.placecage.com/600/300" alt="Image description">
+
+            <div class="slider-caption">
+               <p>Image slider caption</p>
+            </div>
+        </div>
+
+        <div class="slider-image">
+            <img data-lazy="https://www.fillmurray.com/g/600/300" alt="Image description">
+
+            <div class="slider-caption">
+                <p>Image slider caption</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="slider-buttons-wrap">
+      <div class="slider-buttons">
+        <span class="fa fa-play play" aria-hidden="true"></span>
+        <span class="fa fa-pause pause" aria-hidden="true"></span>
+      </div>
+    </div>
+
+</div>
+
+                    <h2>Default Bootstrap Dropdown</h2>
+<div class="dropdown">
+  <a href="#" class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+
+<h2>Custom Dropdown</h2>
+<div class='drop-container'>
+	<button class='dropdown-vpm'>Lorem Ipsum</button>
+	<ul>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+		<li>
+			<a href='#'>lorem ipsum</a>
+		</li>
+	</ul>
+</div>
+
+                    <form class="kitchensink-form">
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputPassword">Password</label>
+          <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="Select1">Example select</label>
+          <select class="form-control" id="Select1">
+            <option>Item 1</option>
+            <option>Item 2</option>
+            <option>Item 3</option>
+            <option>Item 4</option>
+            <option>Item 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Select2">Example multiple select</label>
+          <select multiple class="form-control multi-select-group select-multiple" id="Select2">
+            <option>Item 1</option>
+            <option>Item 2</option>
+            <option>Item 3</option>
+            <option>Item 4</option>
+            <option>Item 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Textarea">Example text area</label>
+          <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="file-submit">File input</label>
+          <input type="file" class="form-control-file" id="file-submit" aria-label="choose file to upload">
+          <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+        </div>
+        <fieldset class="form-group">
+          <legend>Radio buttons</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="form-check disabled">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+              Option three is disabled
+            </label>
+          </div>
+        </fieldset>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+            Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+                    <div class="input-group input-group-item">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <span class="input-group-addon" id="basic-addon1">@example.com</span>
+</div>
+
+                    <div class="list-group custom-list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading custom content</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading custom content</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading custom content</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+</div>
+
+<div class="list-group-item">
+
+   <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-3">
+          <label class="sr-only">
+            External Link
+          </label>
+          <a href='#'><span aria-hidden="true" class="file-icon fa fa-file"></span></a>
+          </div>
+        <div class="col-md-3">
+          <label class="sr-only">
+            External Link
+          </label>   
+          <a href='#'><span aria-hidden="true" class="download-icon fa fa-download"></span></a>
+          </div>
+        <div class="col-md-3">  
+          <label class="sr-only">
+            External Link
+          </label>
+          <a href='#'><span aria-hidden="true" class="file-img-icon fa fa-file-image-o"></span></a>
+          </div>
+        <div class="col-md-3">
+          <label class="sr-only">
+            External Link
+          </label>
+          <a href='#'><span aria-hidden="true" class="archive-icon fa fa-file-archive-o"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-3">
+          <label class="sr-only">
+            External Link
+          </label>
+          <a href='#'><span aria-hidden="true" class="link-icon fa fa-external-link-square"></span></a>
+         </div>
+        <div class="col-md-3">
+          <label class="sr-only">
+            Word Document
+          </label>
+          <a href='#'><span aria-hidden="true" class="word-icon fa fa-file-word-o"></span></a>
+         </div>
+        <div class="col-md-3">
+          <label class="sr-only">
+            File Folder
+          </label>
+          <a href='#'><span aria-hidden="true" class="file-folder-icon fa fa-folder"></span></a>
+        </div>
+        <div class="col-md-3">
+          <label class="sr-only">
+            Image File
+          </label>
+          <a href='#'><span aria-hidden="true" class="img-icon fa fa-picture-o"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch long scroll modal
+</button>
+
+<!-- Long Scroll Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">Modal title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slick-modal-wrap">
+  <div class="row slick-modal">
+     <h4 class="col-sm-12 slick-modal-header">Slick Modal Header (h4)</h4>
+    <div class="modal-img col-4">
+      <a href="http://placekitten.com/1000/600" target="_blank" class="thumbnail"><img  src="http://placekitten.com/1000/600" alt="Example Alt Text"></a>
+    </div>
+    <div class="modal-img col-4">
+      <a href="http://placekitten.com/1010/606" target="_blank" class="thumbnail"><img  src="http://placekitten.com/1010/606" alt="Example Alt Text"></a>
+    </div>
+    <div class="modal-img col-4">
+      <a href="http://placekitten.com/1060/636" target="_blank" class="thumbnail"><img  src="http://placekitten.com/1060/636" alt="Example Alt Text"></a>
+    </div>
+  </div>
+</div>
+
+                    <nav class="pagination-nav" aria-label="example large pagination">
+  <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a aria-label="pagination link one" class="page-link" href="#">1</a></li>
+    <li class="page-item"><a aria-label="pagination link two" class="page-link" href="#">2</a></li>
+    <li class="page-item"><a aria-label="pagination link three" class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a aria-label="next page link" class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+                    <div class="scrollspy-section">
+  <nav id="navbar-example" class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="#">Scrollspy</a>
+      <div class="row">
+      <ul class="nav nav-pills col-sm-12">
+        <li class="nav-item col-sm-3 col-md-3"><a class="nav-link" href="#cat">cat</a></li>
+        <li class="nav-item col-sm-3 col-md-4"><a class="nav-link" href="#murray">murray</a></li>
+        <li class="nav-item dropdown col-sm-3 col-md-5">
+          <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one">one</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item active" href="#two">two</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">three</a>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </nav>
+      <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example scrollspy-content">
+        <h4 id="cat" style="">Cat</h4>
+        <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+        <h4 id="murray" style="">Murray</h4>
+        <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+        <h4 id="one" style="">one</h4>
+        <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+        <h4 id="two" style="">two</h4>
+        <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+        <h4 id="three" style="">three</h4>
+        <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+        <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+        </p>
+      </div>
+
+</div>
+
+                    <div class="tooltips-section">
+    <button type="button" class="btn btn-secondary tooltip-top" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary tooltip-right" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+      Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary tooltip-bottom" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+      Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary tooltip-left" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+      Tooltip on left
+    </button>
+
+    <a href="#" class="tooltip-link" data-toggle="tooltip" title="Some tooltip text!">Tooltip Link</a>
+
+
+</div>
+
+                    <div id="img-overlay-wrap" class="card">
+
+  <img class="card-img-top img-fluid" src="https://www.fillmurray.com/600/300" alt="Image Description">
+  
+  <div class="card-img-overlay img-overlay-text">
+      <label class="sr-only">
+        The following text is the caption of the image.
+      </label>
+    <p class="card-text text-left">
+      This is the caption of the above image.
+    </p>
+  </div>
+
+</div>
+
+                    <div class="text-input-section">
+    <p>
+        Long paragraph text example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim mi. Suspendisse semper arcu vel hendrerit placerat. Nullam purus enim, posuere et ante eu, faucibus dictum dui. Morbi efficitur urna turpis, id tempus augue finibus eget. Phasellus id ultricies nisl. Nam viverra risus nec odio cursus facilisis pellentesque eu nisi. Donec eu risus nunc. Sed lacinia, mauris ut finibus mattis, dui libero auctor sapien, pellentesque aliquet tortor metus eget orci. Maecenas orci nisi, scelerisque et augue non, placerat fringilla augue. Etiam quis pellentesque purus. Sed vel auctor augue. Phasellus placerat in odio vitae auctor. Cras libero risus, malesuada quis dolor in, auctor luctus lectus. Donec volutpat arcu quis euismod dignissim. Phasellus at nisi lacus. Suspendisse posuere imperdiet quam, id venenatis justo aliquam convallis. Suspendisse potenti. Aliquam facilisis tristique volutpat. Ut ut rhoncus mauris. Cras vitae elit posuere, ultricies dolor eu, dignissim nisl. Proin vitae congue augue. Maecenas sapien eros, finibus et rhoncus nec, porttitor sed lorem. Nunc at rhoncus turpis.
+    </p>
+</div>
+
+                    
+
+                    <div class="media img-left">
+    <div class="row">
+
+          <div class="media-left img-fluid col-sm-12 col-md-12 col-lg-4">
+            <a href="#">
+               <img class="media-object img-border img-fluid d-flex align-self-center mr-3" src="https://www.fillmurray.com/600/600" alt="example image">
+            </a>
+           </div>
+
+        <div class="media-body col-sm-12 col-md-12 col-lg-8">
+            <h2 class="media-heading">Section Title H2 Image Left/Below of Text Input</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. <a href="#" class="learn-more">More</a></p>
+        </div>
+
+    </div>
+</div>
+
+
+                    <div class="media img-right">
+    <div class="row">
+
+        <div class="media-body col-sm-12 col-md-12 col-lg-8">
+            <h2 class="media-heading">Section Title H2 Image Right/Above of Text Input</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. <a href="#" class="learn-more">More</a></p>
+        </div>
+
+        <div class="media-right img-fluid col-sm-12 col-md-12 col-lg-4">
+            <a href="#">
+              <img class="media-object img-fluid d-flex align-self-center mr-3" src="https://www.fillmurray.com/600/600" alt="example image">
+            </a>
+        </div>
+
+    </div>
+</div>
+
+                    
+
+                    <div class="embed-video-wrap">
+    <h4>Video Title (H4)</h4>
+    <div class="embed-video">
+        <iframe aria-label="embeded youtube video" title="embeded youtube video" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="embed-video-wrap">
+    <div id="embed-jwplayer" class="embed-video"></div>
+</div>
+                </main>
+
+                <aside role="complementary" class="right-sidebar col-sm-12 col-md-12 col-lg-4">
+    <div class="cta-block block">
+        <a href="#" class="btn btn-primary btn-lg btn-block btn-cta">
+            <h3 class="cta-header text-left">Apply Now</h3>
+            <p class="cta-text text-left">Here is some cta text</p>
+            <span class="cta-arrow-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="cta-block block">
+        <a href="#" class="btn btn-primary btn-lg btn-block btn-cta">
+            <h3 class="cta-header text-left">Apply Now</h3>
+            <span class="cta-arrow-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="card cta-card cta-card-list">
+        <h4 class="card-title">Important Dates</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Card subtitle</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" aria-label="Important Dates" class="card-link">Important Dates</a>
+        <a href="#" aria-label="Important Dates" class="card-link">Important Dates Two</a>
+        <ul class="list-group list-group-flush cta-card-list">
+            <li class="list-group-item cta-card-li">List item - Cras justo odio</li>
+            <li class="list-group-item cta-card-li"><a href="#" class="list-group-item-action cta-link">List item link - Dapibus ac facilisis in</a></li>
+            <li class="list-group-item cta-card-li">List item - Vestibulum at eros</li>
+        </ul>
+    </div>
+
+   <div class="card cta-card">
+        <div class="card-block">
+            <h4 class="card-title">Important Dates & Deadlines</h4>
+            <p class="card-text">card paragraph text description.</p>
+            <ul>
+                <li><a href="#" class="promo-link">Important Dates</a></li>
+                <li><a href="#" class="promo-link">Important Dates</a></li>
+                <li><a href="#" class="promo-link">Important Dates</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card cta-card">
+        <h4 class="card-title">Got Questions?</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Card subtitle</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" aria-label="Important Dates" class="card-link">Click here to contact us</a>
+    </div>
+
+    <div class="card cta-card">
+        <h4 class="card-title">Promo</h4>
+        <img class="card-img-top img-fluid" src="http://fillmurray.com/400/400" alt="Card image cap">
+        <div class="card-block">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" aria-label="Email" class="card-link">Email: example@example.com</a>
+        </div>
+    </div>
+
+    <div class="embed-video-wrap video-promo">
+	<h4 class="card-title">Video Title (H4)</h4>
+	<div class="embed-video">
+		<iframe aria-label="embeded youtube video promo" title="embeded youtube video promo"  width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+	</div>
+	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		<h5>Email:</h5>
+		<a href="#" aria-label="Email" class="card-link">example@example.com</a>
+</div>
+</aside>
+
+            </div>
+
+        </div>
+        
+    </div>
 
 </div>
 
@@ -199,26 +1544,26 @@
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">Admissions &amp; Records</a>
+                    <a class="btn btn-primary" href="#">Admissions</a>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">Assessment Center</a>
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">Bookstore – Barnes & Noble</a>
+                    <a class="btn btn-primary" href="#">Records</a>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">Cafeteria – WVM Café</a>
+                    <a class="btn btn-primary" href="#">Book Store</a>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">CalWORKs Program</a>
+                    <a class="btn btn-primary" href="#">Cafeteria</a>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-2">
-                    <a class="btn btn-primary" href="http://www.westvalley.edu/">Campus Center Building</a>
+                    <a class="btn btn-primary" href="#">Programs</a>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <a class="btn btn-primary" href="#">Campus</a>
                 </div>
 
             </div>
@@ -234,12 +1579,12 @@
                         <address>
                         <ul class="list-unstyled">
                           <li>
-                            14000 Fruitvale Avenue<br>
-                            Saratoga, CA<br>
-                            95070 <br>
+                            555 Address Avenue<br>
+                            City, State<br>
+                            55555 <br>
                           </li>
                           <li>
-                            Phone: (408) 867-2200
+                            Phone: (555) 555-5555
                           </li>
                         </ul>
                       </address>
@@ -250,15 +1595,15 @@
                     <div class="footer-pad">
                         <h4>Services</h4>
                         <ul class="list-unstyled">
-                            <li><a href="http://www.westvalley.edu/">Financial Aid</a>
+                            <li><a href="#">Financial Aid</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Library</a>
+                            <li><a href="#">Library</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Writing Center</a>
+                            <li><a href="#">Writing Center</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Veterans Resource Center</a>
+                            <li><a href="#">Resource Center</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">FAQs</a>
+                            <li><a href="#">FAQs</a>
                             </li>
                         </ul>
                     </div>
@@ -268,15 +1613,13 @@
                     <div class="footer-pad">
                         <h4>Website Information</h4>
                         <ul class="list-unstyled">
-                            <li><a href="http://www.westvalley.edu/">Accessibility</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Disclaimer</a>
+                            <li><a href="#">Disclaimer</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Privacy Policy</a>
+                            <li><a href="#">Privacy Policy</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">FAQs</a>
+                            <li><a href="#">FAQs</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Webmaster</a>
                             </li>
                         </ul>
                     </div>
@@ -286,18 +1629,17 @@
                     <div class="footer-pad">
                         <h4>Departments</h4>
                         <ul class="list-unstyled">
-                            <li><a href="http://www.westvalley.edu/">Applied Arts and Sciences</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Business</a>
+                            <li><a href="#">Business</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Fine Arts</a>
+                            <li><a href="#">Fine Arts</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Language Arts</a>
+                            <li><a href="#">Language Arts</a>
                             </li>
-                            <li><a href="http://www.westvalley.edu/">Physical Education</a>
+                            <li><a href="#">Physical Education</a>
                             </li>
                             <li>
-                                <a href="http://www.westvalley.edu/">Science & Mathematics</a>
+                                <a href="#">Science & Mathematics</a>
                             </li>
                         </ul>
                     </div>
@@ -314,7 +1656,7 @@
                     <p class="text-sm-center">&copy; Copyright
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> - West Valley College. All rights reserved.</p>
+                        </script> - Front End Only Demo. All rights reserved.</p>
                 </div>
             </div>
         </div>
