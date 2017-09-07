@@ -1,0 +1,11 @@
+/*
+*** LIST GROUP COMPONENT ***
+*/
+.custom-list-group{
+    .list-group-item:first-child{
+            border-radius: 0;
+    }
+    .list-group-item:last-child{
+            border-radius: 0;
+    }
+}

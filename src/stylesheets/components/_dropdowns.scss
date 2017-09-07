@@ -1,0 +1,105 @@
+/*
+*** DROPDOWN COMPONENT ***
+*/
+
+main, .dropdown-menu {
+  background: $white;
+  width: 100%;
+}
+
+
+// VPM Dropdown Taken from UNH
+
+.drop-container {
+  display: block;
+  width: 100%;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+@media (min-width: 45em) {
+  .drop-container {
+    padding: 0 10px 0 0;
+    width: auto;
+  }
+}
+.drop-container ul {
+  display: none;
+  float: left;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  border: 1px solid #14325f;
+  padding:0;
+}
+.drop-container ul li {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.drop-container ul li a {
+  font-family: 'ITCFranklinGothicBK';
+  color: #003366;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  float: left;
+  width: calc(100% - 20px);
+  padding: 10px 5px;
+  margin: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+.drop-container ul li:last-child a {
+  border: none;
+}
+.drop-container .dropdown-vpm {
+  font-family: 'BebasNeueBold', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 100%;
+  position: relative;
+  padding-right: 20px;
+  border: 1px solid #14325f;
+  outline: none;
+  padding: 15px 30px 15px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background:#14325f;
+  display: inline-block;
+  width: auto;
+
+}
+.drop-container .dropdown-vpm:after {
+  content:'\f0d9';
+  font-family: FontAwesome;
+  font-size: 12px;
+  position: absolute;
+  padding: 0 10px;
+  top: calc(50% - 6px);
+  color: inherit;
+  -webkit-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+  transition: all .2s;
+}
+.drop-container .dropdown-vpm:after {
+  top: calc(50% - 12px);
+  font-size: 16px;
+}
+.drop-container.open .dropdown-vpm:after {
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg);
+}
+.drop-container.open ul {
+  display: block;
+  position: relative;
+  top: 100%;
+}
+@media (min-width: 45em) {
+  .drop-container.open ul {
+    position: absolute;
+  }
+}

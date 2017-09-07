@@ -1,0 +1,20 @@
+{% macro factoid(id, num, text) %}
+
+    <!--{# https://css-tricks.com/svg-use-external-source #}-->
+
+    <div class='factoid factoid-{{id}}'>
+        <div class="icon-container">
+            <!--<img src="/images/icons/factoid-{{id}}.svg" onerror="this.src='/images/icons/factoid-{{id}}.png'">-->
+            <!-- <svg viewBox="100 100 100 100"><use xlink:href='/images/icons/factoid-{{id}}.svg' /></use></svg> -->
+            <h1> Testing factoid! </h1>
+            <i class="fa fa-percent" aria-hidden="true"></i>
+        </div>
+        <div class="text-container">
+            <h3>
+                <span class="fact-num">{{num}}</span>
+                <span class="fact-text">{{text}}</span>
+            </h3>
+        </div>
+    </div>
+
+{% endmacro %}

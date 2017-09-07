@@ -1,0 +1,49 @@
+#img-overlay-wrap {
+	background: $white;
+	border: none;
+	width: 100%;
+	margin: 1rem 0;
+	padding: 0;
+	.card-img-top {
+		border-radius: 0;
+	}
+	.card-img-overlay{
+		border-left: 1px solid $gray-dk;
+		border-right: 1px solid $gray-dk;
+		border-bottom: 1px solid $gray-dk;
+		top: auto;
+		padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+		background: $gray-lter;
+			@include media-breakpoint-down(sm) {
+				display: block;
+				border: none;
+				background: $white;
+				position: relative;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0px;
+				padding: 0;
+		}
+
+	}
+	p .card-text {
+		//padding: 1rem 0 1rem 0;
+		@include media-breakpoint-down(sm){
+			//padding: 0;
+			margin: 0;
+		}
+	}
+	.img-overlay-text {
+		p {
+			@include media-breakpoint-down(sm){
+				//padding: 0;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	img {
+		max-height: none;
+		object-fit: contain;
+	}
+}

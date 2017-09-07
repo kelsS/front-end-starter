@@ -1,0 +1,16 @@
+.fieldset-wrap {
+    background: $off-grey;
+    padding: 0.5rem;
+    .fieldset-header {
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    .fieldset-content {
+        background: $white;
+        padding: 0.5rem 1rem;
+        h1,h2,h3,h4,h5,h6 {
+            padding: 0.5rem 0;
+        }
+        text-align: center;  
+    }
+}

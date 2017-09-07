@@ -1,0 +1,148 @@
+/*
+*** GLOBAL ***
+*/
+
+$breakpoints: $grid-breakpoints;
+
+header, nav, main, footer, article, section, aside {
+   display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $dkblue;
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    color: $dkblue;
+}
+
+a,
+p a {
+    color: $blue;
+    &:hover {
+        color: $bluest;
+    }
+    &:focus {
+        color: $black;
+        border: 1px solid $black;
+    }
+    &:active {
+        color: $blue;
+    }
+}
+
+p {
+    a {
+        color: $blue;
+    }
+}
+
+.btn {
+    &:hover {
+        color: $gray-lter;
+    }
+    &:focus {
+        color: $white;
+        border: 2px solid $black;
+    }
+    &:active {
+        color: $gray-lter;
+    }
+}
+
+.dropdown-toggle {
+    &:focus {
+        color: $black;
+    }
+}
+
+img {
+    max-width: 100%;
+    margin: 0.8rem 0;
+}
+
+ iframe {
+    margin: 0 auto;
+    max-width: 100%;
+    border: 0;
+
+ }
+
+figcaption {
+    padding: 0.5rem 0;
+}
+
+.fa {
+    color: $black;
+}
+
+.skip {
+    background: $black;
+    color: #000;
+}
+
+.block {
+    margin: 0 0 2.5rem;
+    max-width: 400px;
+}
+
+.input-group-item {
+    input[type="text"] {
+        border-radius: 0;
+    }
+    .input-group-addon {
+        border-radius: 0;
+    }
+}
+
+strong {
+    font-weight: 800;
+}
+
+#jq-accordion {
+    margin: 1rem 0;
+}
+
+.media-text-section {
+    margin-top: 1rem;
+}
+
+.slick-modal {
+    .slick-modal-header {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .modal-img {
+        padding: 0 0.2rem;
+    }
+}
+
+.media {
+    @include media-breakpoint-down(sm){
+        max-width: 300px;
+
+    }
+}
+
+.sr-only {
+    background: $white;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+table {
+    width: 100%;
+}
+
+#content-top {
+    img {
+        width: 100%;
+    }
+}

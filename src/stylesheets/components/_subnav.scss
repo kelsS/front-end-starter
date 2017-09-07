@@ -1,0 +1,111 @@
+
+.sidebar-nav {
+	list-style:none;
+	margin:0;
+	padding:0.5rem 1rem;
+	background: $blue;
+	z-index:2;
+	position:relative;
+	ul {
+		li {
+			&:first-child{
+			//@include font('oswald-b',22,$black,rem);
+			text-transform:none;
+			margin: 1rem 0 1rem 0;
+			border-bottom: 1px solid $white;
+			&:hover,&:active,&:focus{
+				cursor:pointer;
+				/*@include breakpoint(lg) {
+					cursor:default;
+				*/}
+			}
+			&:nth-child(2){
+				color: $black;
+			}
+			> a{
+				font-size: 1.2rem;
+				color:$white;
+				&:hover,&:active,&:focus{
+					border-color:$white;
+				}
+				/*@include breakpoint(lg) {
+					@include font('oswald-b',22,$black,rem); // added to change font family and color to match design
+					&:hover,&:active,&:focus{
+						border-color:$blue;
+						color:$blue;
+					}
+				}*/
+			}
+		}
+	}
+}
+
+
+.sidenar-nav{
+	list-style:none;
+	margin:0;
+	padding:0.5rem 1rem;
+	background: $black;
+	z-index:2;
+	position:relative;
+	/*@include breakpoint(lg) {
+		padding:0 0 0 1.563rem; // 25px
+		background:none;	
+	}*/
+	> li:first-child{
+		//@include font('oswald-b',22,$black,rem);
+		text-transform:uppercase;
+		margin: 1rem 0 1rem 0;
+		border-bottom: 1px solid $white;
+		&:hover,&:active,&:focus{
+			cursor:pointer;
+			/*@include breakpoint(lg) {
+				cursor:default;
+			*/}
+		}
+		> li:nth-child(2){
+			color: $black;
+		}
+		> a{
+			font-size: 1.8rem;
+			color:$white;
+			&:hover,&:active,&:focus{
+				border-color:$white;
+			}
+			/*@include breakpoint(lg) {
+				@include font('oswald-b',22,$black,rem); // added to change font family and color to match design
+				&:hover,&:active,&:focus{
+					border-color:$blue;
+					color:$blue;
+				}
+			}*/
+		}
+		&:before{
+			content:'\f0d9';
+			font-family:FontAwesome;
+			color:$white;
+			display:block;
+			float:right;
+			transition: 0.2s all ease-in-out;
+			//@include font-size(22,rem);
+			/*@include breakpoint(lg) {
+				content:'\f0da';
+				display:none;
+			}
+		}*/
+		&.opened{
+			&:before{
+				transform:rotate(-90deg);
+			}
+		}
+	}
+	ul{
+		list-style:none;
+		//margin:0;
+		padding:0;
+		margin-left: 1.5rem;
+	}
+	a{
+		border-bottom:2px solid transparent;
+	}
+}

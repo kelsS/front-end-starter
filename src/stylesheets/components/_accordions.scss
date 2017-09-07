@@ -1,0 +1,46 @@
+/*
+*** ACCORDION COMPONENT ***
+*/
+
+.accordion-section {
+    margin: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
+    .card {
+        margin: 1rem 0 -1rem 0;
+        a[data-toggle=collapse] {
+            display: block;
+            color: $black;
+            padding: 0;
+            border: 0;
+        }
+        .card-header {
+            padding: 1rem;
+            a {
+                &:before {
+                    font-family: FontAwesome;
+                    content: "\f068";
+                    display: block;
+                    float: right;
+                    color: $gray-dk;
+                }
+                &.collapsed:before {
+                    font-family: FontAwesome;
+                    content: "\f067";
+                    display: block;
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+#jq-accordion {
+    .ui-accordion-header {
+        background: $off-grey;
+        color: $black;
+        border-radius: 0;
+        // .ui-accordion-header-icon {
+        //     color: $white;
+        // }
+    }
+}

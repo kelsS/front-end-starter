@@ -1,0 +1,78 @@
+.tabWidgetContainer {
+    padding: 20px;
+	background-color: #eee;
+	border-radius: 0;
+	border: 1px solid #ccc;
+    .tablist {
+        list-type:none;
+	    margin: 0;
+	    padding: 0;
+        li {
+            float: left;
+	        position: relative;
+	        top: 1px;
+	        margin: 0 5px 0 0;
+	        padding: 6px 9px 3px 9px;
+	        list-style-type: none;
+	        background: #fff;
+	        border: 1px solid #d9d9d9;
+	        border-radius: 0;
+	        border-bottom: none;
+            @media screen and (max-width: 50rem) {
+                float: none;
+                width: 100%;
+            }
+        }
+        li:hover {
+            cursor:pointer;
+        }
+        li:focus {
+            outline: 2px solid $black;
+	        outline-offset: 2px;
+            width: auto;
+            z-index: 100;
+        }
+        li.active {
+            position: relative;
+	        top: 1px;
+	        padding: 7px 9px 4px 9px;
+	        font-weight: bold;
+        }
+    }
+
+    .tabgrouping {
+        z-index: 99;
+	    clear: both;
+	    background: #fff;
+	    padding: 30px;
+	    border: 1px solid #CCC;
+	    border-radius: 0;
+	    box-shadow: #e8e8e8 0 0px 3px;
+            .inactive {
+              display: none;
+            }
+        .tabpanel {
+            label.text {
+                clear: both;
+	            width: 160px;
+	            float: left;
+	            text-align: right;
+	            padding: 0 2px 0 0;
+            }
+            input[type='text'] {
+                width: 200px;
+            }
+            input[type='text'].long {
+                width: 300px;
+            }
+            input[type='text'].short {
+                width: 100px;
+            }
+            fieldset {
+                border-radius: 10px;
+	            border: 1px solid #ccc
+            }
+        }
+    }
+}
+

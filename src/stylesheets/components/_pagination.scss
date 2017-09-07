@@ -1,0 +1,26 @@
+/*
+*** PAGINATION COMPONENT ***
+*/
+
+// breaks pagination to multiple lines on mobile
+// instead of causing horizontal scrolling
+.pagination{
+	display:block;
+	.page-item{
+		float:left;
+	}
+}
+
+.pagination-nav {
+    background: $white;
+    width: 100%;
+}
+
+.pagination-lg .page-link{
+    color: $black;
+}
+.pagination-nav:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}

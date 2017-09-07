@@ -1,0 +1,114 @@
+/*
+*** MIXINS ***
+*/
+
+/* Breakpoint */
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media (min-width: 576px) { @content; }
+  }
+  @else if $point == xs {
+    @media (min-width: 470px) { @content; } // added this mixin to fix xs screen issues on mobile -KS
+  }
+  @else if $point == sm-md {
+    @media (min-width: 580px)  { @content; } // added this mixin to fix mobile menu padding issue -KS
+  }
+  @else if $point == md {
+    @media (min-width: 768px)  { @content; }
+  }
+  @else if $point == lg {
+    @media (min-width: 992px)  { @content; }
+  }
+  @else if $point == xl {
+    @media (min-width: 1200px)  { @content; }
+  }
+  @else if $point == xxl {
+    @media (min-width: 1440px)  { @content; }
+  }
+}
+
+/* 
+ *  Set font-size independant of the font mixin
+ *  
+ *  usage:
+ *    p{
+ *      @include font-size(16);
+ *    }
+ */
+@mixin font-size($sizeValue: 16,$px:'rem') {
+  font-size: $sizeValue + px;
+  @if $px == 'rem'{
+    font-size: ($sizeValue / 16) + rem;
+  }
+}
+
+/* 
+ * Font
+ *  
+ * h3{ @include font('Open Sans',16,$white,0); }
+ *
+ */
+@mixin font($family:'Arial',$size:16,$color:$black,$px:'rem'){
+  
+  color:$color;
+  @include font-size($size,$px);
+
+  @if $family == 'roboto'{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+  } @else if $family == 'roboto-lt'{
+    font-family:'Roboto', sans-serif;
+    font-weight:300;
+  } @else if $family == 'roboto-th'{
+    font-family:'Roboto', sans-serif;
+    font-weight:100;
+  } @else if $family == 'roboto-thi'{
+    font-family:'Roboto', sans-serif;
+    font-weight:100;
+    font-style:italic;
+  } @else if $family == 'roboto-m'{
+    font-family:'Roboto', sans-serif;
+    font-weight:500;
+  } @else if $family == 'roboto-b'{
+    font-family:'Roboto', sans-serif;
+    font-weight:700;
+  } @else if $family == 'roboto-bl'{
+    font-family:'Roboto', sans-serif;
+    font-weight:900;
+  } @else if $family == 'roboto-con'{
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight:700;
+  } @else if $family == 'merriweather'{
+    font-family: 'Merriweather', serif;
+    font-weight:400;
+  } @else if $family == 'merriweather-i'{
+    font-family: 'Merriweather',sans-serif;
+    font-weight:400;
+    font-style: italic;
+  } @else if $family == 'merriweather-lt'{
+    font-family: 'Merriweather', serif;
+    font-weight:300;
+  } @else if $family == 'merriweather-b'{
+    font-family: 'Merriweather', serif;
+    font-weight:700;
+  } @else if $family == 'primary'{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  } @else if $family == 'secondary'{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  } @else if $family == 'body'{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  }@else {
+    font-family:'Merriweather',sans-serif;
+  }
+
+}
+
+/* Floatblock */
+@mixin floatblock($dir:left, $width:100%){
+    display: block;
+    float: $dir;
+    width: $width;
+}

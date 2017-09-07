@@ -1,0 +1,156 @@
+/*
+*** LEFT SIDEBAR TEMPLATE ***
+*/
+
+.subnav-container {
+    margin: 0 0 30px 0;
+    h2.section-title {
+        margin: 0;
+        padding: 12px;
+        position: relative;
+        background: $white;
+        background: #d0d6df;
+        color: $black;
+        @include font-size(28);
+        cursor: pointer;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+        &:after {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+            content: "\f0dd";
+            font-family: FontAwesome;
+            @include font-size(24);
+            line-height: 1;
+            font-weight: normal;
+            padding-left: 5px;
+            position: absolute;
+            top: 6px;
+            right: 20px;
+            -webkit-transition: transform 0.3s;
+            transition: transform 0.3s;
+        }
+    }
+    .subnav-content {
+        @include font-size(14);
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+            margin: 0;
+            a {
+                display: block;
+                margin: 0;
+                padding: 10px;
+                background: $gray-lt;
+                background: #eee;
+                @include media-breakpoint-up(md) {
+                    background: none;
+                }
+                &:hover {
+                    color: $gray-dk;
+                    text-decoration: none;
+                    background: #ddd;
+                    @include media-breakpoint-up(md) {
+                        background: none;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &.current-menu-item {
+                > a {
+                    color: $gray-lt;
+                }
+                .current-page-item {
+                    > a {
+                        font-weight: 400;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        &.subnav {
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+            > li {
+                > a {
+                    display: block;
+                    margin: 0;
+                    padding: 12px 20px 10px 30px;
+                    position: relative;
+                    @include font-size(16);
+                }
+                button.list-toggle {
+                    display: block;
+                    position: absolute;
+                    padding: 10px 10px 10px 10px;
+                    background: inherit;
+                    border: 0;
+                    text-shadow: none;
+                    z-index: 1;
+                    span {
+                        color: #000;
+                        cursor: pointer;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: $black;
+                    }
+                }
+                &.list-item-open {
+                    button.list-toggle {
+                        -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                    }
+                    .sub-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.sub-menu {
+            display: none;
+            margin: 0;
+            padding: 0 0 0 25px;
+            background: $offer-white;
+            @include media-breakpoint-up(md) {
+                background: transparent;
+            }
+            li {
+                a {
+                    @include font-size(14);
+                    &:hover {
+                        color: $gray-lt;
+                    }
+                }
+            }
+        }
+    }
+
+    .extra-info {
+        background: $offer-white;
+        border: 0;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@include media-breakpoint-down(sm) {
+    body.subnav-open #subnav-toggle:after {
+        top: 18px;
+        right: 12px;
+        -webkit-transform: rotateZ(-180deg);
+        transform: rotateZ(-180deg);
+    }
+    .subnav-content {
+        display: none;
+    }
+    body.subnav-open .subnav-content {
+        display: block;
+    }
+}

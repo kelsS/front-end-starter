@@ -1,0 +1,12 @@
+/*
+*** TOOLTIP COMPONENT ***
+*/
+
+.tooltip-left,.tooltip-right,.tooltip-top,.tooltip-bottom,.tooltip-link {
+    &:hover {
+        color: $black;
+    }
+    &:active {
+        color: $black;
+    }
+}

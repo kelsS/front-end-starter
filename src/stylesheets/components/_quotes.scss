@@ -1,0 +1,46 @@
+blockquote {
+    width: 100%;
+    clear: both;
+    background: #f9f9f9;
+    border-left: 10px solid $teal;
+    margin: 0 0 2.5rem 0;
+    padding: .5em 10px;
+}
+.pull-quote {
+    display: block;
+    margin: 0 2rem 2rem 0;
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    max-width: 250px;
+    position: relative;
+    float: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: $white;
+    text-transform: uppercase;
+    background: $dkblue;
+    border: 1px solid $offer-white;
+    box-shadow: 0 0 5px #2F2F2F; 
+    &:before, &:after {
+        content: "“";
+        font-family: Georgia;
+        font-size: 400%;
+        position: absolute;
+        color: $white;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    }
+    &:before {
+        content: "“";
+        top: -1rem;
+        left: .5rem;
+    }
+    &:after {
+        content: "”";
+        bottom: -2.5rem;
+        right: 1rem;
+    }
+    @include media-breakpoint-up(md) {
+        float: left;
+    }
+}

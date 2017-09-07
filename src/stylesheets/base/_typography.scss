@@ -1,0 +1,141 @@
+/*
+*** TYPOGRAPHY ***
+*/
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'variables';
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700|Roboto+Condensed:700|Roboto:100,100i,300,400,500,700,900');
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* html {
+    //font-size: 12px;
+    font-size: 55%;
+    @include breakpoint(sm-md) {
+        //font-size: 14px;
+        font-size: 58%;
+    }
+    @include breakpoint(lg) {
+        //font-size: 16px;
+        font-size: 62.5%;
+    } 
+} */
+
+html,
+body {
+    font-size: 0.875em;
+    @include breakpoint(sm) {
+        font-size: 0.9em;
+    }
+    @include breakpoint(xl) {
+        font-size: 1em;
+    }
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+    margin-top: 0;
+}
+
+h1,
+.h1 {
+    margin-bottom: 0.8rem;
+    @include font('primary',48,$black,rem);
+    @include breakpoint(md) {
+        @include font-size(56);
+    }
+}
+
+h2,
+.h2 {
+    margin-bottom: 0.5rem;
+    @include font('primary',36,$black,rem);
+    //text-transform: uppercase;
+}
+
+h3,
+.h3 {
+    margin-bottom: 0.5rem;
+    @include font('secondary',28,$black,rem);
+}
+
+h4,
+.h4 {
+    margin-bottom: 0.5rem;
+    @include font('primary',24,$black,rem);
+    //text-transform: uppercase;
+}
+
+h5,
+.h5 {
+    margin-bottom: 0.5rem;
+    @include font('secondary',22,$black,rem);
+}
+
+h6,
+.h6 {
+    margin-bottom: 0.5rem;
+    @include font('primary',18,$black,rem);
+    //text-transform: uppercase;
+}
+
+p,
+ul,
+ol {
+    @include font('body',18,$black,rem);
+}
+p {
+    line-height: 1.85rem;
+}
+
+a,
+p a,
+main li a {
+    color: #0054A0;
+    font-size: inherit;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+}
+
+a:hover, p a:hover {
+    color: #003893;
+    /* font-size: inherit; */
+    text-decoration: underline;
+}
+
+.learn-more {
+    @include font('primary',18,$black,rem);
+    text-transform: uppercase;
+    &.white {
+        color: #fff;
+    }
+}
+
+ul {
+    margin: 0 0 20px 0;
+    li {
+        margin: 0 0 10px 0;
+    }
+}
+
+blockquote{
+    
+}
+
+/* ul ul,
+ol ol {
+    color: $black;
+    padding-left: 1rem;
+} */
+
+hr {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid #e6e6e6;
+    clear: both;
+}

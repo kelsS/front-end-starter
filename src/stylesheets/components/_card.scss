@@ -1,0 +1,36 @@
+/*
+*** CARD COMPONENT ***
+*/
+
+.card {
+	margin: 1rem 0;
+	//padding: 1.5rem;
+	border-radius: 0;
+	.card-block {
+		padding: 0.5rem;
+	}	
+	.card-header {
+		color: $white;
+	}
+	.card-title {
+		word-break: normal;
+	}
+	img {
+		max-height: 250px;
+		object-fit: contain;
+	}
+}
+
+.cards-section {
+	margin: 0 -15px 0 -15px;
+	.card {
+		padding: 0.5rem;
+		margin: 1rem 0 1rem 0;
+	}
+}
+
+.card-link {
+	&:hover {
+		text-decoration: underline;
+	}
+}

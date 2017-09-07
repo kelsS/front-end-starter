@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+  <body class="inner {{ custom_classes }}">
+    
+     <a aria-label="Skip to Main Content" tabindex="0" class="skip sr-only sr-only-focusable" href="#main-content">Skip to Main Content</a> 
+
+    {% include "shared/header.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "shared/footer.html" %}
+
+    {% include "partials/end.html" %}
+
+  </body>
+</html>

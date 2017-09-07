@@ -1,0 +1,37 @@
+.scrollspy-section {
+	margin: 1rem 0 1rem 0;
+	border: $card-border-width solid $card-border-color;
+	.nav-item a {
+		color: $black;
+		//font-size: 0.8rem;
+		@include breakpoint (sm){
+			width: 8rem;
+		}
+		@include breakpoint (md){
+			width: 7rem;
+		}
+		@include breakpoint (lg){
+			width: 8rem;
+		}
+		&.active {
+			border-radius: 0;
+		}
+	}
+	.dropdown-menu {
+		background: $white;
+		border-radius: 0;
+		.dropdown-item {
+			width: auto;
+			&.active {
+				color: $white;
+			}
+		}
+	}
+
+	.scrollspy-content {
+		padding: 1rem;
+		position: relative;
+		height: 300px;
+		overflow: auto;
+	}
+}

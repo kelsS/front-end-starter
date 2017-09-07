@@ -1,0 +1,119 @@
+/*
+*** JQUERY TAB COMPONENT ***
+*/
+
+#tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+
+#tabs-nav li {
+    float: left;
+    font-size: 14px;
+    font-weight:bold;
+    margin-right: 6px;
+    padding:6px 10px;
+    border:1px solid #d5d5de;
+    border-bottom:none;
+    cursor:pointer;
+  }
+#tabs-nav li:hover,
+li.active {
+    background-color: #d5d5de;
+}
+
+.tabWidgetContainer {
+    clear: both;
+}
+
+.tabWidgetContainer ul.tablist li:focus {
+    outline-offset: 0;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid #d5d5de;
+    border-top: none;
+}
+
+@media (max-width: 900px) {
+    #tabs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+  
+}
+
+.tabs:before,
+.tabs:after {
+    content: " ";
+    display: table;
+}
+
+.tabs:after {
+    clear: both;
+}
+
+#tabs {
+    border-radius: 0;
+    margin: 1rem auto;
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    .ui-widget-header {
+        border-radius: 0;
+    }
+
+    .ui-tabs-nav {
+        li {
+            border-radius: 0;
+            @include media-breakpoint-down(sm){
+                float: none;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            @include media-breakpoint-up(md){
+                float: left;
+                width: auto;
+                padding: 0.5rem;
+            }
+
+             
+                a.ui-tabs-anchor {
+                    @include media-breakpoint-down(sm) {
+                        float: none;
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+            
+        }
+        li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-state-hover.ui-tabs-active.ui-state-active {
+            background: $blue;
+             border-radius: 0;
+            @include media-breakpoint-down(sm){
+                float: none;
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+        li.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+            background: $blue;
+            @include media-breakpoint-down(sm){
+                float: none;
+                width: 100%;
+                padding: 1rem;
+                
+            }
+        }
+    }
+}
