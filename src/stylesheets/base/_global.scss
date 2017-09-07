@@ -1,7 +1,6 @@
 /*
 *** GLOBAL ***
 */
-
 $breakpoints: $grid-breakpoints;
 
 header, nav, main, footer, article, section, aside {
@@ -121,7 +120,6 @@ strong {
 .media {
     @include media-breakpoint-down(sm){
         max-width: 300px;
-
     }
 }
 
